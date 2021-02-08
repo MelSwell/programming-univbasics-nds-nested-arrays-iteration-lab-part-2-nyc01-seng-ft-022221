@@ -20,4 +20,4 @@ def find_min_in_nested_arrays(src)
   min_nums
 end
 
-find_min_in_nested_arrays([[4, 78, 2, 15], [3, 4, 2, 12]])
+puts find_min_in_nested_arrays([[4, 78, 2, 15], [3, 4, 2, 12]])
