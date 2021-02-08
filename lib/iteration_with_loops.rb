@@ -5,7 +5,19 @@ def find_min_in_nested_arrays(src)
   # Produce a new Array that contains the smallest number of each of the nested arrays
   min_nums = []
   row_idx = 0 
-  while row_idx < src.
+  while row_idx < src.length do
+    el_idx = 0 
+    min = 1000
+    while el_idx < src[row_idx] do
+      if src[row_idx][el_idx] < min
+        min = src[row_idx][el_idx]
+      end
+      min_nums << min
+      el_idx += 1
+    end
+    row_idx += 1
+  end
+  min_nums
 end
 
 puts find_min_in_nested_arrays([
