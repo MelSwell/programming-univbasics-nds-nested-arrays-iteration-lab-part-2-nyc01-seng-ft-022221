@@ -8,7 +8,7 @@ def find_min_in_nested_arrays(src)
   while row_idx < src.length do
     el_idx = 0 
     min = 1000
-    while el_idx < src[row_idx] do
+    while el_idx < src[row_idx].length do
       if src[row_idx][el_idx] < min
         min = src[row_idx][el_idx]
       end
