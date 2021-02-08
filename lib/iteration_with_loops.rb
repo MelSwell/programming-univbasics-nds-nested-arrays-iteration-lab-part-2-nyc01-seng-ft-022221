@@ -11,7 +11,6 @@ def find_min_in_nested_arrays(src)
     while el_idx < src[row_idx].length do
       if src[row_idx][el_idx] < src[row_idx][el_idx + 1]
       min = src[row_idx][el_idx]
-      binding.pry
       end
       el_idx += 1
     end
@@ -20,3 +19,5 @@ def find_min_in_nested_arrays(src)
   end
   min_nums
 end
+
+find_min_in_nested_arrays([4, 78, 2, 15])
